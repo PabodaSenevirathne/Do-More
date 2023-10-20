@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @objc private func addTapItem(){
-        let alert = UIAlertController(title: "New Item", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add Item", message: "", preferredStyle: .alert)
         alert.addTextField{ field in field.placeholder = "Write an item"}
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {[weak self] (_) in
