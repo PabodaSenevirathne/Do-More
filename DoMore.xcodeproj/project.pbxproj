@@ -16,7 +16,6 @@
 		D7635B062ADF106E00B97C27 /* DoMoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7635B052ADF106E00B97C27 /* DoMoreTests.swift */; };
 		D7635B102ADF106E00B97C27 /* DoMoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7635B0F2ADF106E00B97C27 /* DoMoreUITests.swift */; };
 		D7635B122ADF106E00B97C27 /* DoMoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7635B112ADF106E00B97C27 /* DoMoreUITestsLaunchTests.swift */; };
-		D7635B232ADF15A500B97C27 /* DisplayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7635B222ADF15A500B97C27 /* DisplayTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		D7635B0B2ADF106E00B97C27 /* DoMoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoMoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7635B0F2ADF106E00B97C27 /* DoMoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoMoreUITests.swift; sourceTree = "<group>"; };
 		D7635B112ADF106E00B97C27 /* DoMoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoMoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D7635B222ADF15A500B97C27 /* DisplayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +123,6 @@
 			children = (
 				D7635B0F2ADF106E00B97C27 /* DoMoreUITests.swift */,
 				D7635B112ADF106E00B97C27 /* DoMoreUITestsLaunchTests.swift */,
-				D7635B222ADF15A500B97C27 /* DisplayTableViewController.swift */,
 			);
 			path = DoMoreUITests;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7635B122ADF106E00B97C27 /* DoMoreUITestsLaunchTests.swift in Sources */,
-				D7635B232ADF15A500B97C27 /* DisplayTableViewController.swift in Sources */,
 				D7635B102ADF106E00B97C27 /* DoMoreUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
