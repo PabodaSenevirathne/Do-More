@@ -72,12 +72,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             tableView.beginUpdates()
-            items.remove(at: indexPath.row)
+            //items.remove(at: indexPath.row)
+            let deletedItem = items.remove(at: indexPath.row)
+            deleteItem(items: deletedItem)
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
         }
         
       
+    }
+    
+    func deleteItem(items:String){
+        if var savedItems = UserDefaults.standard.stringArray(forKey: "items"){
+            if let index = savedItems.firstIndex(of: items){
+                savedItems.remove(at: index)
+                UserDefaults.standard.set(savedItems,forKey:"items")
+                
+            }
+        }
+        
+        
     }
    
     

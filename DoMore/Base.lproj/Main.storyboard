@@ -15,8 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="7Kq-W8-nRl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-jx-7Nx">
+                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="L6G-tV-IdY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L6G-tV-IdY" firstAttribute="bottom" secondItem="ftg-jx-7Nx" secondAttribute="bottom" id="2Lz-oZ-RI0"/>
+                            <constraint firstItem="L6G-tV-IdY" firstAttribute="trailing" secondItem="ftg-jx-7Nx" secondAttribute="trailing" id="UkS-Ag-KIU"/>
+                            <constraint firstItem="ftg-jx-7Nx" firstAttribute="leading" secondItem="L6G-tV-IdY" secondAttribute="leading" id="rdh-VQ-zt6"/>
+                            <constraint firstItem="ftg-jx-7Nx" firstAttribute="top" secondItem="L6G-tV-IdY" secondAttribute="top" id="v6Q-Qc-q0W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZMk-z5-Biv"/>
                 </viewController>
