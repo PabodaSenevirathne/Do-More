@@ -22,12 +22,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         title = "To Do List"
         view.addSubview(table)
         table.dataSource = self
+        table.delegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self , action: #selector(addTapItem))
         // Do any additional setup after loading the view.
     }
     
     @objc private func addTapItem(){
-        let alert = UIAlertController(title: "New Item", message: "Enter new to do list item!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "New Item", message: "", preferredStyle: .alert)
         alert.addTextField{ field in field.placeholder = "Write an item"}
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {[weak self] (_) in
